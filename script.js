@@ -88,19 +88,38 @@ const score = [45,55,67,77,82,95,"a",null];
 evaluateResult(score);
 
 
-const identity = {
-    name: "sohel",
-    year: 1986
-}
+// Perfect Password Function
 
-const idName = identity.name
+function createPerfectPassword(p) {
+    
+const idName = p.name
 
-if(identity.year.toString().length<4){
+if(typeof(p)=="string"){
     console.log("Invalid Input");
 }
 
 else{
-       
-    console.log(idName.slice(0,1).toUpperCase()+idName.slice(1,idName.length)+identity.year);
+
+    if(p.year.toString().length<4){
+        console.log("Invalid Input");
+    }
+
+    else{
+        
+        console.log(idName.slice(0,1).toUpperCase()+idName.slice(1,idName.length)+identity.year);
+    }
+}
 }
 
+
+const identity = {
+    name: "Sohel",
+    year: 1986
+}
+
+createPerfectPassword(identity);
+
+
+const incomeExpense = [3000,2000,1500], 5000
+
+console.log(incomeExpense);
