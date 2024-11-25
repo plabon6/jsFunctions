@@ -119,7 +119,26 @@ const identity = {
 
 createPerfectPassword(identity);
 
+// Calculating Monthly Expenses
 
-const incomeExpense = [3000,2000,1500], 5000
+function calculateMonthlyExpenses(i, e) {
+    if (typeof (i) == "string" || typeof (e) == "string") {
+        console.log("Invalid Input");
+    }
 
-console.log(incomeExpense);
+    else {
+        let total = 0 - e;
+        for (let s = 0; s < i.length; s++) {
+            total += i[s];
+        
+        }
+        if (total < 0) {
+            console.log("Save More Money");
+        }
+        else {
+            console.log(total);
+        } 
+    }
+}
+
+calculateMonthlyExpences([3000,2000,1500], 5000);
